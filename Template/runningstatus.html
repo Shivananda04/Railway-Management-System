@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">    
+<head>   
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Running Status</title>    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
+</head>    
+<body>
+    <form id = "Running status" action="/runningstatus1" method="post" enctype="multipart/form-data">
+        <input type="date" name="Date" id="Date" placeholder="Start of journey">
+        <input type="number" placeholder="Enter a train number" name="running" id="running">
+        <button class="button" type="submit">Check</button>
+    </form>
+    <form id = "Logout" action="/" enctype="multipart/form-data">
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button class="button" type="submit">Logout</button>
+            </div>
+          </div>
+    </form>
+    <div>
+        {% for i in status %}
+        <h1>Currently crossed {{i[0]}}.</h1>
+        <h1>Arrives {{i[2]}} at {{i[3]}}.</h1>
+        {% endfor %}
+    </div>
+    <div>
+        {% for i in status1 %}
+        <h1>Currently crossed {{i[0]}}.</h1>
+        <h1>Arrives {{i[3]}} at {{i[4]}}.</h1>
+        {% endfor %}
+    </div>
+    <div>
+        <h1>{{notrunning}}</h1>
+    </div>
+</body>
+</html>

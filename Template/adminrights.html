@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">    
+<head>   
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Running Status</title>    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">    
+</head>    
+<body>
+    <form id = "releaseg" action= "/releaseg" enctype="multipart/form-data">
+        <button class="button" type="submit">Release general tickets</button>      
+    </form>
+    <form id = "releaset" action= "/releaset" enctype="multipart/form-data">
+        <button class="button" type="submit">Release tatkal tickets</button>      
+    </form>
+    <form id = "Logout" action="/" enctype="multipart/form-data">
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button class="button" type="submit">Logout</button>
+            </div>
+          </div>
+    </form>
+</body>
+</html>
