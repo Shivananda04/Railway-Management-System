@@ -2,10 +2,10 @@
 
 ## Team Members
 
-1) Kothuru Sharvani
+1) Siddartha Chennareddy
 2) Koneti Anuhya
 3) Kayala Raana Pramodh
-4) Siddartha Chennareddy
+4) Kothuru Sharvani
 
 ## Templates
 
