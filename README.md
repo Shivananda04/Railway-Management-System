@@ -15,3 +15,7 @@ This folder contains all the html files along with their stylings. In total, the
 
 This is the back end for the entire project. This is made using Flask.
 
+## Railway Database.sql
+
+This is the SQL code for the project. The database consists of 13 
+
