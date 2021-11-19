@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">    
+<head>   
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Running Status</title>    
+    <style>
+        body{
+            background-image: url(https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F1075073528%2F0x0.jpg%3FcropX1%3D0%26cropX2%3D5593%26cropY1%3D515%26cropY2%3D3661);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+           background-attachment: fixed;
+           overflow-x: hidden;
+           position: fixed;
+           
+        }
+
+        .run{
+            border: 4px solid white;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            margin-top: 110%;
+            margin-left: 30%;
+            padding: 35px 50px 35px 50px;
+            font-size: 19px;
+            
+        }
+    </style>
+</head>    
+<body>
+    <form id = "Running status" action="/runningstatus1" method="post" enctype="multipart/form-data" class="run">
+       Train running status <br><br> <input type="date" name="Date" id="Date" placeholder="Start of journey" style="width: 171px;"> <br><br>
+        <input type="number" placeholder="Enter a train number" name="running" id="running"> <br><br>
+        <button class="button" type="submit">Check</button>
+    </form>
+    <div>
+        {% for i in status %}
+        <h1>Currently crossed {{i[0]}}.</h1>
+        <h1>Arrives {{i[2]}} at {{i[3]}}.</h1>
+        {% endfor %}
+    </div>
+    <div>
+        {% for i in status1 %}
+        <h1>Currently crossed {{i[0]}}.</h1>
+        <h1>Arrives {{i[3]}} at {{i[4]}}.</h1>
+        {% endfor %}
+    </div>
+    <div>
+        <h1>{{notrunning}}</h1>
+    </div>
+</body>
+</html>
