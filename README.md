@@ -35,7 +35,7 @@ This is the SQL code for the project. The database consists of 13 tables.
 
 ## How to use the website
 
-Create a database with the above sql code, then download all the html files from the Template folder and the web.py file. Then, on the terminal, execute the python file.
+Create a database with the above sql code, then download all the html files from the Template folder and the web.py file. Then run the python file on the terminal.
 
 When you run the program, you will be directed to the homepage, where you may login, register, read the Terms and Conditions, and opt out of the Privacy Policy.
 
