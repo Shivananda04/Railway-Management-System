@@ -25,3 +25,20 @@ This is the back end for the entire project. This is made using Flask.
 
 This is the SQL code for the project. The database consists of 13 tables .
 
+## How to use the website
+
+Create a database with the above sql code, then download all the html files from the Template folder and the web.py file. Then, on the terminal, execute the python file.
+
+When you run the program, you will be directed to the homepage, where you may login, register, read the Terms and Conditions, and opt out of the Privacy Policy.
+
+To register, click the Register button, where you will be asked to provide the required details.
+
+After successfully registering, you will be directed to the login page, where you must enter your registered username and password.
+
+Then, you may search for trains by entering information such as the boarding station, arrival station, and date of travel. You will search trains based on the details you input and then book tickets of the required class. When you book the tickets, you will be requested to provide the passenger information. After successfully booking, a ticket will be generated, which may be downloaded by choosing the "Generate PDF" option, and a confirmation email will be sent to the user automatically.
+
+By selecting the "Return home" option, you will be sent to the home page, where you can cancel your ticket by selecting the "Cancel Ticket" button. You will be asked to provide the ticket's PNR number. After entering the PNR number, you will be brought to a page with ticket information such as the PNR number, number of tickets, boarding station, arrival station, and date. You can cancel the ticket by selecting "Cancel Ticket." If the Cancellation is successful, the message "Cancelled Successfully" will display. Because tatkal tickets cannot be cancelled, the message "Cancellation not allowed" will display on the screen.
+
+The running status can be viewed by heading to the home page and clicking on the "Check Running Status" button, where the user will be asked to provide the train number and date.
+
+
