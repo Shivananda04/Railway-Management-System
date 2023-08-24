@@ -7,7 +7,7 @@ from flask_mail import Mail,Message
 
 SESSION_TYPE = 'memcache'
 
-app = Flask(__name__,template_folder="Templates1")
+app = Flask(__name__,template_folder="Templates")
 mail = Mail(app)
 
 app.secret_key = 'super secret key'
